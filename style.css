@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    height: 100vh;
+    background-image: url("assists/BG.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center center;
+    z-index:2;
+    padding: 20px 80px;
+}
+.button{
+    display: inline-flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.language{
+    display: inline-flex;
+    gap: 6px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 3px;
+    border: 2px solid gray;
+    padding: 2px 6px;
+    font-size: medium;
+    cursor: pointer;
+}
+.language img {
+    filter: brightness(0) invert(1);
+    justify-items: center;
+}
+.Signin {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    font-size: medium;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
