@@ -174,11 +174,18 @@ nav{
     padding-right: 100px;
 }
 .reason .box{
-    background-color: blueviolet;
+    background: radial-gradient(#0b3276, #33063ed7);
     color: white;
     height: 292px;
     width: 300px;
     border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.reason .box h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .h2{
     color: white; background-color: black; padding-left: 130px;
