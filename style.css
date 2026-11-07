@@ -120,23 +120,40 @@ nav{
     padding-top: 40px;
     padding-left: 120px;
 }
-.poster{
+.poster {
+    counter-reset: ranking;
     height: 100vh;
     background-color: black;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    column-gap: 1px;
-    padding-left: 150px;
-    padding-top: 25px;
-    
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    padding-top:35px;
+    padding-left: 160px;
+    padding-right: 100px;
 }
 .poster img{
-    border: none;
-    display: block;
-    border-radius: 8px;
-
+    border-radius: 7px;
     transition: transform 0.3s ease-in-out;
 }
 .poster img:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
+}
+
+.poster div {
+    position: relative;
+    counter-increment: ranking;
+}
+
+.poster div::before {
+    content: counter(ranking);
+
+    position: absolute;
+    bottom: 55px;
+    left: -20px;
+
+    font-size: 100px;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: 2px white;
+    z-index: 2;
 }
